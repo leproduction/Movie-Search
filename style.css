@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #131720;
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #131720;
+    padding: 10px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  .searchBox {
+    float: right;
+  }
+  
+  form {
+    background-color: #151f30;
+    width: 300px;
+    height: 43px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    all: unset;
+    font: 15px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 9px;
+  }
+  
+  .thumbnail {
+    height: 350px;
+    width: 300px;
+    border-radius: 19px;
+  }
+  
+  #search {
+    margin-left: auto;
+    flex: 1;
+  }
+  
+  #submit {
+    width: 20%;
+    height: 100%;
+  }
+  
+  .box {
+    background-color: lightblue;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin-right: 5px; 
+    margin-left: 5px;/* Adjust spacing between cards */       /* Float cards to the right */
+    display: inline-block;
+    border-radius: 10px; /* Display as inline block */
+  }
+  
+  .movieImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent image overflow */
+  }
+  
+  .movie-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* This ensures the image fits while maintaining aspect ratio */
+  }
+  
+  h3 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .row {
+   /* Prevents cards from wrapping */
+   /* Adds horizontal scrollbar if cards exceed container width */
+    padding: 20px 0;  /* Add padding to the row */
+    border-radius: 10px;   
+    width: 200px;
+  }
+  
+  .column {
+    /* Adjust the width based on your layout */
+    width: 200px;       /* Width of the column including card and margin */
+    display: inline-block;
+    vertical-align: top; /* Aligns columns to the top */
+    margin-right: 10px;  /* Adjust spacing between columns */
+  }
